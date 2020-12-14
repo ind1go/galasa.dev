@@ -80,7 +80,12 @@ module.exports = {
         component: require.resolve(`./src/components/layout`),
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      }
+    },
     {
       resolve: `@danbruegge/gatsby-plugin-stylelint`,
       options: {
