@@ -7,6 +7,8 @@ import GitHubSVG from "../../images/github.inline.svg"
 
 import Identifier from "../identifier"
 import { isSelectedSection } from "../../utils/section"
+import SearchCustom from "../search-custom"
+// import Search from "../search"
 
 import headerStyles from "./header.module.scss"
 
@@ -138,6 +140,7 @@ const Header = ({ extraHeight }) => {
                 >
                   <GitHubSVG />
                 </a>
+                <SearchCustom />
               </div>
             </div>
             <div
